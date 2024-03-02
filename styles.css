@@ -1,0 +1,45 @@
+.toggle {
+  background: #efefef ;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 6px 0;
+  position: relative;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+}
+
+.selector {
+  height: 26px;
+  width: 60px;
+  background: coral;
+  border-radius: 60px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  transition: left .125s ease-in-out;
+}
+
+.system:checked ~ .selector {
+  left: 2px;
+}
+
+.light:checked ~ .selector {
+  left: 64px;
+}
+
+.dark:checked ~ .selector {
+  left: 126px;
+}
