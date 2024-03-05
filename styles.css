@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
   border-radius: 100px;
   display: inline-block;
-  padding: 6px 0;
+  padding: 4px 0;
   position: relative;
 }
 
@@ -12,7 +12,7 @@ input[type=radio] {
 }
 
 label {
-  width: 60px;
+  width: 24px;
   display: inline-block;
   text-align: center;
   z-index: 5;
@@ -21,8 +21,8 @@ label {
 }
 
 .selector {
-  height: 26px;
-  width: 60px;
+  height: 24px;
+  width: 24px;
   background: coral;
   border-radius: 60px;
   position: absolute;
@@ -37,9 +37,9 @@ label {
 }
 
 .light:checked ~ .selector {
-  left: 64px;
+  left: 28px;
 }
 
 .dark:checked ~ .selector {
-  left: 126px;
+  left: 54px;
 }
