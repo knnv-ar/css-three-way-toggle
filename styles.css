@@ -23,7 +23,7 @@ label {
 .selector {
   height: 24px;
   width: 24px;
-  background: coral;
+  background: #ccc;
   border-radius: 60px;
   position: absolute;
   top: 2px;
@@ -32,14 +32,49 @@ label {
   transition: left .125s ease-in-out;
 }
 
+#system-icon {
+  fill: #666;
+  stroke: none;
+  stroke-width: 0px;
+}
+
 .system:checked ~ .selector {
   left: 2px;
+}
+
+.system:checked ~ * #system-icon {
+  fill: #666;
+  stroke: #666;
+  stroke-width: 0.2px;
 }
 
 .light:checked ~ .selector {
   left: 28px;
 }
 
+#system-icon {
+  fill: #aaa;
+  stroke: #ddd;
+  stroke-width: 1px;
+}
+
+.light:checked ~ * #light-icon {
+  fill: #666;
+  stroke: #666;
+}
+
 .dark:checked ~ .selector {
   left: 54px;
+}
+
+#system-icon {
+  fill: #ddd;
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+.dark:checked ~ * #dark-icon {
+  fill: #666;
+  stroke: #666;
+  stroke-width: 0.2px;
 }
