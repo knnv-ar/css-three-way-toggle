@@ -1,0 +1,68 @@
+CSS Animation in 100 Seconds
+https://youtu.be/HZHHBwzmJLk
+
+// animation 101
+
+.logo {
+	opacity: 0;
+	transition: opacity 230ms easy-in-out;
+}
+
+.logo:hover {
+	opacity: 1;
+}
+
+// @keyframes permite definir animaciones independientemente del selector
+// estilos iniciales (from{}), estilos finales (styles {}) y estilos intermedios (en % relativo al tiempo total)
+
+@keyframes mySpinner {
+	from {
+		transform: rotate(0deg);
+}
+25% {
+		transform: rotate(-45deg);
+}
+	to {
+		transform: rotate(360deg);
+}
+}
+
+.spinner {
+animation: mySpinner 4s;
+animation-iteration-count: infinite;
+}
+
+====================================================================================
+
+/* old way defining light and dark modes
+body {
+	background-color: #efefef;
+	color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #131313;
+    color: white;
+  }
+}
+*/
+/*
+color-scheme puede ser: light, dark y normal
+*/
+:root {
+color-scheme:
+}
+
+====================================================================================
+Kevin Powell
+-three way option [DONE]
+-position fixed
+-dark light system
+-scrool story (https://www.youtube.com/watch?v=ErSwQhrfbuc&t=10s)
+
+
+
+====================================================================================
+DOING:
+https://www.youtube.com/watch?v=_yCgeXFAXTM&ab_channel=KevinPowell

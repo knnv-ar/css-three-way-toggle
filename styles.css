@@ -1,3 +1,26 @@
+:root {
+  /* color-scheme: light dark; */
+  --clr-light: #fdffc4; 
+  --clr-dark: #00332a;
+  --clr-primary: #dbffa2;
+  --clr-secondary: #c3cff2;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+}
+
+.darkmode {
+  --clr-light: #fdffc4; 
+  --clr-dark: #00332a;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+
 .toggle {
   background: #efefef ;
   border: 1px solid #ccc;
@@ -5,6 +28,9 @@
   display: inline-block;
   padding: 4px 0;
   position: relative;
+  position: fixed;
+  top: 16px;
+  right: 16px;
 }
 
 input[type=radio] {
@@ -74,4 +100,11 @@ label {
   stroke-width: 0.2px;
   transition: fill .125s ease-in, stroke .125s ease-in;
   transition-delay: .062s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #131313;
+    color: white;
+  }
 }
